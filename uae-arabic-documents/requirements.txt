@@ -1,0 +1,6 @@
+arabic-reshaper>=3.0
+python-bidi>=0.5        # >=0.5 REQUIRED: top-level get_display (Rust UBA with isolates)
+reportlab>=4.0
+hijridate>=2.3
+pypdfium2>=4.0          # verifier extraction engine (pypdf drops mixed-run tails)
+fonttools>=4.0
