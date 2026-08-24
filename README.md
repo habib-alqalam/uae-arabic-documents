@@ -32,7 +32,7 @@ that are simply *correct*.
 ## Quick start
 
 ```bash
-git clone https://github.com/<you>/uae-arabic-documents
+git clone https://github.com/habib-alqalam/uae-arabic-documents
 cd uae-arabic-documents
 pip install -r requirements.txt
 python3 demo/generate_demo_letter.py
@@ -52,7 +52,7 @@ from uae.amounts import tafqit_aed
 ## The five fixes that matter most
 
 1. **Reversed line order** — `ar()` (reshape+BiDi) returns *visual*
-   order; a wrapping renderer then wraps it LTR and your paragraph
+   order; a wrapping renderer then wraps it LTR and r paragraph
    reads bottom-to-top. `rtl_paragraph.py` wraps in logical order and
    applies BiDi per line. (bug-catalog #1)
 2. **List markers on the wrong end** — markers are separate BiDi runs.
